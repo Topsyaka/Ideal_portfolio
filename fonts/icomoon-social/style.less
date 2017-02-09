@@ -1,0 +1,54 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon_social';
+  src:  url('@{icomoon-font-path}/icomoon_social.eot?8fhgot');
+  src:  url('@{icomoon-font-path}/icomoon_social.eot?8fhgot#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/icomoon_social.ttf?8fhgot') format('truetype'),
+    url('@{icomoon-font-path}/icomoon_social.woff?8fhgot') format('woff'),
+    url('@{icomoon-font-path}/icomoon_social.svg?8fhgot#icomoon_social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon__social {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon_social' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkdln {
+  &:before {
+    content: @icon-linkdln;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: @icon-instagram;
+  }
+}
+.icon-google {
+  &:before {
+    content: @icon-google;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: @icon-facebook;
+  }
+}
+.icon-clutch {
+  &:before {
+    content: @icon-clutch;
+  }
+}
+

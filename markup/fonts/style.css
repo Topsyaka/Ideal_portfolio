@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?momqyb');
+    src:    url('fonts/icomoon.eot?momqyb#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?momqyb') format('truetype'),
+        url('fonts/icomoon.woff?momqyb') format('woff'),
+        url('fonts/icomoon.svg?momqyb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-delete:before {
+    content: "\e900";
+}
+.icon-upload:before {
+    content: "\e907";
+}
+.icon-uploaded:before {
+    content: "\e908";
+}
+.icon-logo:before {
+    content: "\e90b";
+}
+.icon-administration:before {
+    content: "\e90c";
+}
+.icon-desctop:before {
+    content: "\e90d";
+}
+.icon-developers:before {
+    content: "\e90e";
+}
+.icon-integration:before {
+    content: "\e90f";
+}
+.icon-marketing:before {
+    content: "\e910";
+}
+.icon-mobile:before {
+    content: "\e911";
+}
+.icon-phone2:before {
+    content: "\e912";
+}
+.icon-planet:before {
+    content: "\e913";
+}
+.icon-scroll-down:before {
+    content: "\e914";
+}
+.icon-testers:before {
+    content: "\e915";
+}
+.icon-user:before {
+    content: "\e916";
+}
+.icon-web:before {
+    content: "\e917";
+}
+.icon-close3:before {
+    content: "\e918";
+}
+.icon-close2:before {
+    content: "\e919";
+}
+.icon-apply:before {
+    content: "\e91a";
+}
+.icon-back:before {
+    content: "\e91b";
+}
+.icon-404:before {
+    content: "\e91c";
+}
+.icon-manager:before {
+    content: "\e91d";
+}
+.icon-management:before {
+    content: "\e91e";
+}
+.icon-workplace:before {
+    content: "\e91f";
+}
+.icon-resources:before {
+    content: "\e920";
+}
+.icon-managers:before {
+    content: "\e921";
+}
+.icon-backbone-seeklogocom:before {
+    content: "\e922";
+}
+.icon-css3:before {
+    content: "\e923";
+}
+.icon-phone22:before {
+    content: "\e924";
+}
+.icon-place:before {
+    content: "\e925";
+}
+.icon-Global_Payments__46495:before {
+    content: "\e926";
+}
+.icon-HTML5VectorLogo:before {
+    content: "\e927";
+}
+.icon-javascript-seeklogo:before {
+    content: "\e928";
+}
+.icon-jwt:before {
+    content: "\e929";
+}
+.icon-laravel-seeklogocom:before {
+    content: "\e92a";
+}
+.icon-magento:before {
+    content: "\e92b";
+}
+.icon-PayPal:before {
+    content: "\e92c";
+}
+.icon-PHP:before {
+    content: "\e92d";
+}
+.icon-requirejs-seeklogocom:before {
+    content: "\e92e";
+}
+.icon-swift-seeklogo:before {
+    content: "\e931";
+}
+.icon-wordpress-seeklogocom:before {
+    content: "\e932";
+}
+.icon-yii-seeklogocom:before {
+    content: "\e933";
+}
+.icon-jwt2:before {
+    content: "\e93b";
+}
+.icon-bottle-empty:before {
+    content: "\e600";
+}
+.icon-bottle-full:before {
+    content: "\e601";
+}
+.icon-similar-wines:before {
+    content: "\e602";
+}
+.icon-return-info:before {
+    content: "\e603";
+}
+.icon-shipping-info:before {
+    content: "\e604";
+}
+.icon-refresh:before {
+    content: "\e605";
+}
+.icon-up-arrow:before {
+    content: "\e606";
+}
+.icon-facebook:before {
+    content: "\e607";
+}
+.icon-google:before {
+    content: "\e608";
+}
+.icon-pinterest:before {
+    content: "\e609";
+}
+.icon-wines:before {
+    content: "\e60a";
+}
+.icon-twitter:before {
+    content: "\e60b";
+}
+.icon-quote:before {
+    content: "\e60c";
+}
+.icon-minus:before {
+    content: "\e60e";
+}
+.icon-plus:before {
+    content: "\e60f";
+}
+.icon-star-full:before {
+    content: "\e610";
+}
+.icon-drop-arrow:before {
+    content: "\e611";
+}
+.icon-attention:before {
+    content: "\e612";
+}
+.icon-secure-check-01:before {
+    content: "\e613";
+}
+.icon-producers:before {
+    content: "\e614";
+}
+.icon-grapes:before {
+    content: "\e628";
+}
+.icon-offers:before {
+    content: "\e661";
+}
+.icon-box:before {
+    content: "\e678";
+}
+.icon-gift:before {
+    content: "\e67a";
+}
+.icon-cart:before {
+    content: "\e686";
+}
+.icon-filters:before {
+    content: "\e6bc";
+}
+.icon-search:before {
+    content: "\e6f7";
+}
+.icon-trash:before {
+    content: "\e705";
+}
+.icon-account:before {
+    content: "\e721";
+}
+.icon-register:before {
+    content: "\e72b";
+}
+.icon-my-account:before {
+    content: "\e72c";
+}
+.icon-website:before {
+    content: "\e779";
+}
+.icon-menu:before {
+    content: "\e7a9";
+}
+.icon-locations:before {
+    content: "\e7bb";
+}
+.icon-uniE7C0:before {
+    content: "\e7c0";
+}
+.icon-log-out:before {
+    content: "\e7c1";
+}
+.icon-arrow-right:before {
+    content: "\e7cd";
+}
+.icon-special-offers:before {
+    content: "\e7cf";
+}
+.icon-arrow-left:before {
+    content: "\e7d0";
+}
+.icon-rating:before {
+    content: "\e7d2";
+}
+.icon-favorite:before {
+    content: "\e7d4";
+}
+.icon-close:before {
+    content: "\e7f5";
+}
+.icon-from-critics:before {
+    content: "\e81c";
+}
+.icon-history:before {
+    content: "\e86c";
+}
+.icon-regions:before {
+    content: "\e88c";
+}
+.icon-edit:before {
+    content: "\e8bb";
+}
+.icon-wine-notes:before {
+    content: "\e8e8";
+}
+.icon-info:before {
+    content: "\e8f2";
+}
+.icon-cart-mob:before {
+    content: "\e906";
+}
+.icon-arrow-down:before {
+    content: "\e901";
+}
+.icon-arrow-up:before {
+    content: "\e902";
+}
+.icon-support:before {
+    content: "\e903";
+}
+.icon-contact:before {
+    content: "\e904";
+}
+.icon-help:before {
+    content: "\e905";
+}

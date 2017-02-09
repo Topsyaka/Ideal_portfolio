@@ -1,0 +1,75 @@
+@site_width: 1170px;
+@font_family: 'Open Sans', sans-serif;
+@footer_height: 320px;
+@orange_color: #f7941e;
+@grey_color: #2b3840;
+@grey_color_portfolio: #555b69;
+
+.clearfix() {
+  clear: both;
+  display: block;
+  content: '';
+}
+.valign(@value) {
+  height: @value;
+  line-height: @value;
+}
+.border_radius(@value) {
+  border-radius: @value;
+  -moz-border-radius: @value;
+  -o-border-radius: @value;
+  -webkit-border-radius: @value;
+  -ms-border-radius: @value;
+}
+.icon_font() {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.transform(@property) {
+  -webkit-transform: @property;
+  transform: @property;
+  -moz-transform: @property;
+  -o-transform: @property;
+  -ms-transform: @property;
+}
+.transition(@property) {
+  -webkit-transition: @property;
+  transition: @property;
+  -moz-transition: @property;
+  -o-transition: @property;
+  -ms-transition: @property;
+}
+.box-shadow(@property) {
+  box-shadow: @property;
+  -webkit-box-shadow: @property;
+  -moz-box-shadow: @property;
+  -o-box-shadow: @property;
+  -ms-box-shadow: @property;
+}
+.text-shadow(@property) {
+  text-shadow: @property;
+  -webkit-text-shadow: @property;
+  -moz-text-shadow: @property;
+  -o-text-shadow: @property;
+  -ms-text-shadow: @property;
+}
+.flex-block() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.box-sizing(@property) {
+  -webkit-box-sizing: @property;
+  -moz-box-sizing: @property;
+  box-sizing: @property;
+}
