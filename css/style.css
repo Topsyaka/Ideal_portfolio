@@ -5635,6 +5635,11 @@ input.upload_file_input[type="file"] {
   background-position-x: 43%;
   bottom: -150px;
 }
+@media screen and (max-width: 445px) {
+  .ideal_header .ideal-absolute-image-devices {
+    bottom: -250px;
+  }
+}
 .ideal-second-block {
   box-sizing: border-box;
   height: 1170px;
@@ -5689,6 +5694,11 @@ input.upload_file_input[type="file"] {
   height: 730px;
   position: absolute;
   bottom: -85px;
+}
+@media screen and (max-width: 1200px) {
+  .ideal-second-block .absolute_bottom_image {
+    width: 1170px;
+  }
 }
 .ideal-second-block .absolute_bottom_image .covered_img {
   position: absolute;
@@ -5762,6 +5772,11 @@ input.upload_file_input[type="file"] {
   padding-top: 100px;
   position: relative;
 }
+@media screen and (max-width: 760px) {
+  .ideal-fourth-block {
+    min-height: 730px;
+  }
+}
 .ideal-fourth-block .ideal-text-container {
   float: left;
   margin-top: 50px;
@@ -5784,6 +5799,11 @@ input.upload_file_input[type="file"] {
   width: 100%;
   max-width: 500px;
   float: left;
+}
+@media screen and (max-width: 768px) {
+  .ideal-fourth-block .ideal-text-container {
+    padding: 20px;
+  }
 }
 .ideal-fourth-block .image_block_right {
   width: 100%;
@@ -5808,6 +5828,11 @@ input.upload_file_input[type="file"] {
   user-select: none;
   /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+@media screen and (max-width: 425px) {
+  .ideal-fourth-block .image_block_right {
+    height: auto;
+  }
 }
 .ideal-fourth-block .image_block_right img {
   width: 100%;
@@ -5842,6 +5867,11 @@ input.upload_file_input[type="file"] {
   user-select: none;
   /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+@media screen and (max-width: 425px) {
+  .ideal-fourth-block .image_block_right .cover_block_slider {
+    height: auto;
+  }
 }
 .ideal-fourth-block .image_block_right .absolute-slider-controller {
   position: absolute;
@@ -5887,9 +5917,17 @@ input.upload_file_input[type="file"] {
   background-size: contain;
   left: -355px;
 }
+@media screen and (max-width: 425px) {
+  .ideal-fourth-block .image_block_right {
+    height: auto;
+  }
+  .ideal-fourth-block .image_block_right .cover_block_slider {
+    height: auto;
+  }
+}
 .ideal-fifth-block {
   width: 100%;
-  height: 560px;
+  min-height: 560px;
   position: relative;
   padding-top: 30px;
 }
@@ -5898,6 +5936,12 @@ input.upload_file_input[type="file"] {
   margin-top: 150px;
   width: 50%;
   padding: 0px 150px 0 25px;
+}
+@media screen and (max-width: 768px) {
+  .ideal-fifth-block .ideal-right-block {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .ideal-fifth-block .ideal-right-block h3 {
   font-size: 36px;
@@ -5918,6 +5962,11 @@ input.upload_file_input[type="file"] {
   width: 50%;
   height: 475px;
   margin-top: 75px;
+}
+@media screen and (max-width: 768px) {
+  .ideal-fifth-block .ideal-left-block {
+    width: 100%;
+  }
 }
 .ideal-fifth-block .ideal-slider {
   width: 310px;
@@ -5965,7 +6014,6 @@ input.upload_file_input[type="file"] {
   max-width: 600px;
   width: 100%;
   height: 100%;
-  float: left;
   padding-top: 160px;
 }
 .ideal-six-block .ideal-left-block .text-container {
@@ -5986,9 +6034,10 @@ input.upload_file_input[type="file"] {
 .ideal-six-block .ideal-right-block {
   max-width: 600px;
   width: 100%;
-  float: left;
+  position: absolute;
+  right: 0;
+  top: 0;
   height: 100%;
-  position: relative;
 }
 .ideal-six-block .ideal-right-block:after {
   background: url(../images/portfolio-img/Ideal/Ideal_last_block_right.png);
@@ -6028,6 +6077,20 @@ div[class*="ideal-"] {
   height: 100%;
   margin: auto;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .ideal-fifth-block .ideal-container:before {
+    display: none;
+  }
+  .ideal-second-block .ideal-container:before {
+    display: none;
+  }
+  .ideal-six-block .ideal-container:before {
+    display: none;
+  }
+  .ideal-fourth-block .ideal-container:before {
+    display: none;
+  }
 }
 /* ============== */
 /*mobile*/

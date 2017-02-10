@@ -5852,14 +5852,20 @@ input.upload_file_input[type="file"] {
         background-repeat: no-repeat;
         background-position-x: 43%;
         bottom: -150px;
+        @media screen and (max-width: 445px){
+            bottom: -250px;
+        }
     }
 }
+
+
 .ideal-second-block{
     box-sizing: border-box;
     height: 1170px;
     padding-top: 215px;
     position: relative;
     z-index: 10;
+
     .ideal-container{
         position: relative;
         &:before{
@@ -5907,6 +5913,10 @@ input.upload_file_input[type="file"] {
         height: 730px;
         position: absolute;
         bottom: -85px;
+        @media screen and (max-width: 1200px){
+            width: 1170px;
+        }
+
         .covered_img{
             position: absolute;
             &.first{
@@ -5986,6 +5996,9 @@ input.upload_file_input[type="file"] {
     width: 100%;
     height: 730px;
     padding-top: 100px;
+    @media screen and (max-width: 760px){
+        min-height: 730px;
+    }
 
     position: relative;
     .ideal-text-container{
@@ -6010,12 +6023,19 @@ input.upload_file_input[type="file"] {
         width: 100%;
         max-width: 500px;
         float: left;
+        @media screen and (max-width: 768px){
+            padding: 20px;
+        }
     }
     .image_block_right{
+
         width: 100%;
         max-width: 700px;
         float: right;
         height: 390px;
+        @media screen and (max-width: 425px){
+            height: auto;
+        }
         //background: url("../images/portfolio-img/Ideal/slider_images/User.png");
         -webkit-background-size: 100%;
         background-size: 100%;
@@ -6029,6 +6049,7 @@ input.upload_file_input[type="file"] {
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+
         img{
             width: 100%;
         }
@@ -6057,6 +6078,9 @@ input.upload_file_input[type="file"] {
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+            @media screen and (max-width: 425px){
+                height: auto;
+            }
         }
         .absolute-slider-controller{
             position: absolute;
@@ -6101,15 +6125,27 @@ input.upload_file_input[type="file"] {
     }
 
 }
+@media screen and (max-width: 425px){
+    .ideal-fourth-block .image_block_right{
+        height: auto;
+    }
+    .ideal-fourth-block .image_block_right .cover_block_slider{
+        height: auto;
+    }
+}
 .ideal-fifth-block{
     width: 100%;
-    height: 560px;
+    min-height: 560px;
     position: relative;
     padding-top: 30px;
     .ideal-right-block{
         float: left;
         margin-top: 150px;
         width: 50%;
+        @media screen and (max-width: 768px){
+            width: 100%;
+            padding: 20px;
+        }
         //height: 100%;
         padding: 0px 150px 0 25px;
         h3{
@@ -6132,6 +6168,9 @@ input.upload_file_input[type="file"] {
         width: 50%;
         height: 475px;
         margin-top: 75px;
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
     }
     .ideal-slider{
         width: 310px;
@@ -6182,7 +6221,7 @@ input.upload_file_input[type="file"] {
         max-width: 600px;
         width: 100%;
         height: 100%;
-        float: left;
+       // float: left;
         padding-top: 160px;
         .text-container{
             width: 430px;
@@ -6206,9 +6245,12 @@ input.upload_file_input[type="file"] {
     .ideal-right-block{
         max-width: 600px;
         width: 100%;
-        float: left;
+       // float: left;
+        position: absolute;
+        right: 0;
+        top: 0;
         height: 100%;
-        position: relative;
+       // position: relative;
         //background: url("../images/portfolio-img/Ideal/Ideal_last_block_right.png");
         &:after{
             background: url(../images/portfolio-img/Ideal/Ideal_last_block_right.png);
@@ -6254,6 +6296,21 @@ div[class*= "ideal-"]{
     height: 100%;
     margin: auto;
     position: relative;
+}
+
+@media screen and (max-width: 1200px){
+    .ideal-fifth-block .ideal-container:before{
+        display: none;
+    }
+    .ideal-second-block .ideal-container:before{
+        display: none;
+    }
+    .ideal-six-block .ideal-container:before{
+        display: none;
+    }
+    .ideal-fourth-block .ideal-container:before{
+        display: none;
+    }
 }
 
 /* ============== */

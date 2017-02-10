@@ -387,16 +387,28 @@ var dragableModule = (function(){
         }
 
         //Mobile
-
-        element.addEventListener('touchstart',function(){
-            console.log("touch")
-            dragableContainer.addEventListener('touchmove',function(e){
-                moveAt(e);
-            })
+        var startx ;
+        element.addEventListener('touchstart',function(e){
+            console.log(e);
+            var touchobj =e.changedTouches[0];
+            startx = parseInt(touchobj.clientX)
         });
+
+        dragableContainer.addEventListener('touchmove', function(e){
+                var touchobj = e.changedTouches[0] // reference first touch point for this event
+                var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
+                // move box according to starting pos plus dist
+                // with lower limit 0 and upper limit 380 so it doesn't move outside track:
+                moveAt({
+                    pageX: dist
+                })
+               // element.style.left = ( (element.offsetLeft + dragableContainer.offsetWidth > dragableContainer.offsetWidth)? dragableContainer.offsetWidth : (element.offsetLeft + dist < 0)? 0 : element.offsetLeft + dist ) + 'px'
+                e.preventDefault()
+            }, false)
+
         element.addEventListener('touchend',function(){
-            dragableContainer.addEventListener('touchmove',false);
-            element.addEventListener('touchstart',false);
+           // dragableContainer.addEventListener('touchmove',false);
+           // element.addEventListener('touchstart',false);
         })
 
         element.onmousedown = function(e){
