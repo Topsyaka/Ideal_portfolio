@@ -3092,11 +3092,14 @@ input.upload_file_input[type="file"] {
                 border-radius: 50%;
 
             }
+
         }
         .swiper-button-next {
             right: -50px;
             left: inherit;
             background-position: -46px -25px;
+
+
         }
         .contest_slider_block {
             overflow: hidden;
@@ -5815,6 +5818,9 @@ input.upload_file_input[type="file"] {
     background-position: center;
     padding-top: 180px;
     position: relative;
+    @media screen and (max-width: 425px){
+        height: 666px;
+    }
     .logo_center_container{
         width: 220px;
         height: 60px;
@@ -5831,6 +5837,10 @@ input.upload_file_input[type="file"] {
         line-height: 100px;
         font-weight: 400;
         text-align: center;
+        @media screen and (max-width: 425px){
+            line-height: 50px;
+            font-size: 42px;
+        }
     }
     .ideal-subtitle-header{
         width: 100%;
@@ -5852,6 +5862,9 @@ input.upload_file_input[type="file"] {
         background-repeat: no-repeat;
         background-position-x: 43%;
         bottom: -150px;
+        @media screen and (max-width: 768px){
+            bottom: -185px;
+        }
         @media screen and (max-width: 445px){
             bottom: -250px;
         }
@@ -5865,6 +5878,12 @@ input.upload_file_input[type="file"] {
     padding-top: 215px;
     position: relative;
     z-index: 10;
+
+    @media screen and (max-width: 425px){
+        padding-top: 100px;
+    }
+
+
 
     .ideal-container{
         position: relative;
@@ -5887,12 +5906,27 @@ input.upload_file_input[type="file"] {
             display: inline-block;
             vertical-align: middle;
             margin-right: 50px;
+            @media screen and (max-width: 425px){
+                margin-right: 20px;
+            }
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+        img.backbone{
+            height: 60px;
         }
     }
     .ideal-text-container{
         width: 48%;
         float: left;
         margin-top: 130px;
+        @media screen and (max-width: 1200px){
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 425px){
+            width: 100%;
+        }
         h3{
             font-size: 36px;
             color: #ea5e48;
@@ -5958,10 +5992,27 @@ input.upload_file_input[type="file"] {
     padding-top: 110px;
     position: relative;
     background-attachment: fixed;
+    @media screen and (max-width: 1024px){
+        padding-top: 20px;
+    }
+    @media screen and (max-width: 768px){
+        padding-top: 0;
+    }
+    @media screen and (max-width: 425px){
+        padding-top: 0;
+    }
+
     .ideal-text-container{
         width: 48%;
         float: left;
         margin-top: 0px;
+        @media screen and (max-width: 1200px){
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 425px){
+            width: 100%;
+        }
+
         h3{
             font-size: 36px;
             color: #1b4c6d;
@@ -5982,13 +6033,19 @@ input.upload_file_input[type="file"] {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0;
+        top: 0px;
         left: 0;
         background: url("../images/portfolio-img/Ideal/ideal_third_block_imge.png");
         background-position: -30% 37%;
         //background-size: contain;
         background-size: 156%;
         background-repeat: no-repeat;
+        @media screen and (max-width: 768px){
+           left: 75px;
+        }
+        @media screen and (max-width: 425px){
+            top: 150px;
+        }
     }
 }
 
@@ -5997,7 +6054,7 @@ input.upload_file_input[type="file"] {
     height: 730px;
     padding-top: 100px;
     @media screen and (max-width: 760px){
-        min-height: 730px;
+        min-height: 860px;
     }
 
     position: relative;
@@ -6018,6 +6075,10 @@ input.upload_file_input[type="file"] {
             font-family: "Open Sans";
             color: #676767;
         }
+        @media screen and (max-width: 1200px){
+            padding: 0 20px;
+            margin-top: 20px;
+        }
     }
     .ideal-text-container{
         width: 100%;
@@ -6033,6 +6094,10 @@ input.upload_file_input[type="file"] {
         max-width: 700px;
         float: right;
         height: 390px;
+        @media screen and (max-width: 1024px){
+            float: left;
+            margin-top: 20px;
+        }
         @media screen and (max-width: 425px){
             height: auto;
         }
@@ -6078,16 +6143,20 @@ input.upload_file_input[type="file"] {
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+            //border-right: solid 1px orange;
             @media screen and (max-width: 425px){
-                height: auto;
+                height: 100%;
             }
         }
         .absolute-slider-controller{
             position: absolute;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             background: orange;
             border-radius: 50%;
+            background: url("../images/portfolio-img/Ideal/slider_images/contoller_bg.png");
+            -webkit-background-size: cover;
+            background-size: cover;
             top:0;
             bottom: 0;
             margin: auto;
@@ -6099,8 +6168,26 @@ input.upload_file_input[type="file"] {
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+            &:before{
+                display: block;
+                position: absolute;
+                height: 390px;
+                border-left: 2px solid #f7941e;
+                margin: auto;
+                left: 0;
+                right: 0;
+                content: '';
+                width: 0;
+                top: -190px;
+                //bottom: 190px;
+                @media screen and (max-width: 425px){
+                    height: 230px;
+                    top: -100px;
+                }
+            }
 
         }
+
 
     }
     .absolute_over.left{
@@ -6125,19 +6212,97 @@ input.upload_file_input[type="file"] {
     }
 
 }
+
+@media screen and (max-width: 768px){
+    .ideal-technologies_list{
+        width: 90%;
+        margin: auto;
+        li:last-child{
+            margin-right: 0;
+        }
+
+    }
+}
 @media screen and (max-width: 425px){
     .ideal-fourth-block .image_block_right{
         height: auto;
     }
-    .ideal-fourth-block .image_block_right .cover_block_slider{
-        height: auto;
+    .image_block_right  .image_block_right .cover_block_slider{
+        height: 100%;
+
     }
+
+}
+
+html{
+    
 }
 .ideal-fifth-block{
+    .swiper-button-prev{
+        position: absolute;
+        top: 300px;
+        background: url("../images/portfolio-img/Ideal/slider_images/arrow.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 45px;
+        height: 80px;
+        background-repeat: no-repeat;
+        &:hover{
+            background: url("../images/portfolio-img/Ideal/slider_images/active-arrow.png");
+            transform: rotate(180deg);
+            -webkit-background-size: contain;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 1206px){
+            display: none;
+        }
+        @media screen and (max-width: 768px){
+            display: block;
+            left: 10px;
+        }
+        @media screen and (max-width: 425px){
+            display: none;
+        }
+    }
+    .swiper-button-next{
+        background: url("../images/portfolio-img/Ideal/slider_images/arrow.png");
+        transform: rotate(180deg);
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 80px;
+        &:hover{
+            background: url("../images/portfolio-img/Ideal/slider_images/active-arrow.png");
+            -webkit-background-size: contain;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: rotate(0deg);
+        }
+        top: 300px;
+        right: 645px;
+        @media screen and (max-width: 1206px){
+            display: none;
+        }
+        @media screen and (max-width: 768px){
+            display: block;
+            right: 40px;
+        }
+        @media screen and (max-width: 425px){
+            display: none;
+        }
+    }
     width: 100%;
     min-height: 560px;
     position: relative;
     padding-top: 30px;
+    @media screen and (max-width: 768px){
+        min-height: 1000px;
+    }
+    @media screen and (max-width: 320px){
+        min-height: 1200px;
+    }
     .ideal-right-block{
         float: left;
         margin-top: 150px;
@@ -6167,15 +6332,28 @@ input.upload_file_input[type="file"] {
         float: left;
         width: 50%;
         height: 475px;
-        margin-top: 75px;
+        //margin-top: 75px;
         @media screen and (max-width: 768px){
             width: 100%;
         }
+        .slider{
+            width: 310px;
+            margin: auto;
+            height: 630px;
+        }
     }
     .ideal-slider{
-        width: 310px;
+       // width: 310px;
         height: 100%;
         margin: auto;
+        position: relative;
+        padding: 75px 19px 74px 19px;
+        background-color: white;
+         overflow: hidden;
+        width: 310px;
+        .swiper-slide{
+         //   margin-left: 7px;
+        }
         &:after{
             content: '';
             background: url("../images/portfolio-img/Ideal/ideal-iphone-gold.png");
@@ -6187,8 +6365,10 @@ input.upload_file_input[type="file"] {
             position: absolute;
             -webkit-background-size: cover;
             background-size: cover;
-            top: 0;
+            top: 0px;
+            left: 0px;
             z-index: 999;
+
         }
     }
     .ideal-container{
@@ -6217,6 +6397,12 @@ input.upload_file_input[type="file"] {
     height: 645px;
     background: #3799db;
     position: relative;
+    @media screen and (max-width: 425px){
+        height: 1150px;
+    }
+    @media screen and (max-width: 320px){
+        height: 1220px;
+    }
     .ideal-left-block{
         max-width: 600px;
         width: 100%;
@@ -6252,6 +6438,12 @@ input.upload_file_input[type="file"] {
         height: 100%;
        // position: relative;
         //background: url("../images/portfolio-img/Ideal/Ideal_last_block_right.png");
+        @media screen and (max-width: 1024px){
+            width: 300px;
+        }
+        @media screen and (max-width: 425px){
+            width: 100%;
+        }
         &:after{
             background: url(../images/portfolio-img/Ideal/Ideal_last_block_right.png);
             display: block;
@@ -6261,6 +6453,15 @@ input.upload_file_input[type="file"] {
             position: absolute;
             background-size: cover;
             top: -35px;
+            @media screen and (max-width: 1024px){
+                left: -300px;
+            }
+            @media screen and (max-width: 890px){
+                left: -145px;
+            }
+            @media screen and (max-width: 768px){
+                left: -55px;
+            }
         }
     }
     .ideal-container{
@@ -6297,7 +6498,15 @@ div[class*= "ideal-"]{
     margin: auto;
     position: relative;
 }
-
+@media screen and (max-width: 425px){
+    .ideal-six-block .ideal-left-block .text-container{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 500px;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+    }
+}
 @media screen and (max-width: 1200px){
     .ideal-fifth-block .ideal-container:before{
         display: none;
@@ -6314,6 +6523,228 @@ div[class*= "ideal-"]{
 }
 
 /* ============== */
+
+/* Modulo portfolio */
+
+div[class*= "modulo"]{
+    box-sizing: border-box;
+   // background-color: #f7f7f7;
+}
+
+.modulo_container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.modulo_header{
+    height: 850px;
+    padding-top: 200px;
+    background-image: url("../images/portfolio-img/Modulo/header_bg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    //margin-bottom: 130px;
+    h1.modulo_header_text{
+        font-size: 44px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    h3{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 50px;
+        width: 100%;
+        max-width: 400px;
+        float: right;
+        text-align: right;
+    }
+    .modulo_absolute_device_header{
+        position: absolute;
+        background: url("../images/portfolio-img/Modulo/devices.png");
+        background-repeat: no-repeat;
+        bottom: -100px;
+        height: 490px;
+        left: 0;
+        width: 100%;
+        max-width: 800px;
+    }
+}
+.modulo_technology_list{
+    background: #f7f7f7;
+    height: 230px;
+    width: 100%;
+    padding: 130px 0 0 0;
+    .modulo-technologies_list{
+        text-align: center;
+        height: 100%;
+        display: block;
+        li{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 50px;
+            height: 100%;
+            @media screen and (max-width: 425px){
+                margin-right: 20px;
+            }
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+        img{
+            &.php{
+                height: 45px;
+            }
+            &.magenta{
+                height: 62px;
+            }
+            max-height: 100%;
+        }
+        img.backbone{
+            height: 60px;
+        }
+    }
+
+}
+
+.modulo_absolute_second_block{
+    position: absolute;
+    /* width: 100%; */
+    /* height: 760px; */
+    top: 1120px;
+    left: 415px;
+    img:first-child{
+        position: absolute;
+        top: 165px;
+        width: 860px;
+        height: 546px;
+    }
+    img:last-child{
+        position: absolute;
+        top: 39px;
+        width: 860px;
+        height: 546px;
+    }
+}
+
+.modulo_second_block{
+    height: 630px;
+    width: 100%;
+    background: #f7f7f7;
+    padding-top: 25px;
+    .modulo_block_header{
+        float: left;
+        text-transform: uppercase;
+        .modulo_square{
+            width: 25px;
+            height: 25px;
+            background: #847368;
+            display: inline-block;
+            margin-right: 25px;
+        }
+        h2{
+            font-size: 36px;
+            color: #9eaeaf;
+            font-weight: 600;
+            display: inline-block;
+        }
+    }
+    .modulo_text_container{
+        float: right;
+        font-size: 16px;
+        width: 400px;
+        color: #847368;
+        width: 100%;
+        max-width: 290px;
+        text-align: right;
+        p{
+            margin-top: 33px;
+            &:first-child{
+                margin: 0;
+            }
+        }
+    }
+
+}
+.modulo_third_block{
+    padding-top: 140px;
+    height: 740px;
+    width: 100%;
+    background: #f7f7f7;
+    .left_part_text{
+        //width: 100%;
+        width: 50%;
+        height: 100%;
+        float: left;
+        .modulo_block_header{
+            //float: left;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+            .modulo_square{
+                width: 25px;
+                height: 25px;
+                background: #847368;
+                display: inline-block;
+                margin-right: 25px;
+            }
+            h2{
+                font-size: 36px;
+                color: #9eaeaf;
+                font-weight: 600;
+                display: inline-block;
+            }
+        }
+    }
+    p{
+        //float: right;
+        font-size: 16px;
+        max-width: 400px;
+        color: #847368;
+        width: 100%;
+        //max-width: 290px;
+        text-align: left;
+
+
+    }
+    .right_part_slider{
+        width: 50%;
+        height: 100%;
+        float: left;
+        //width: 100%;
+    }
+    .modulo_slider{
+        height: 630px;
+        margin: auto;
+        position: relative;
+        padding: 75px 19px 74px 19px;
+        background-color: white;
+        overflow: hidden;
+        width: 310px;
+        &:after{
+            content: '';
+            background: url("../images/portfolio-img/Ideal/ideal-iphone-gold.png");
+            width: 310px;
+            height: 630px;
+            display: block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            -webkit-background-size: cover;
+            background-size: cover;
+            top: 0px;
+            left: 0px;
+            z-index: 999;
+
+        }
+    }
+}
+
+/* ================ */
 
 /*mobile*/
 @media (max-width: 1290px) {

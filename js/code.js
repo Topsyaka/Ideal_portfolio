@@ -202,12 +202,16 @@ var mySwiper = new Swiper('.lexi_ipad_slider', {
 
 
 
-var mySwiper = new Swiper('.designer_portfolios_slider', {
-    pagination: '#designer-portfolio-pagination',
-    paginationClickable: true,
-    initialSlide: 3,
+var mySwiper = new Swiper('.ideal-slider', {
+    //pagination: '#designer-portfolio-pagination',
+    //paginationClickable: true,
+    //initialSlide: 1,
     spaceBetween: 120,
-    loop: true
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 1
+   // effect:"cube"
 
 });
 
@@ -249,8 +253,8 @@ AnimatedElem.prototype.animate = function(scrollTop,callback) {
             elem.classList.add(this.animationClass);
         }
     }else if(elem){
-    // Get elem
-    var elem = document.querySelector(this.className);
+        // Get elem
+        var elem = document.querySelector(this.className);
 
         elem.classList.add('animated');
         elem.classList.add('lexi_visible');
@@ -362,6 +366,8 @@ var dragableModule = (function(){
         var sliderElementWidth = parseInt(getComputedStyle(element).width);
         var elemCont = document.querySelector(".ideal-container");
         var contOffset = elemCont.offsetLeft;
+        /*element.style.left = object.startPosition;
+        coverTop.style.width = object.startPosition;*/
 
         element.onmousedown = function(e){
             //console.log(e);
@@ -395,20 +401,20 @@ var dragableModule = (function(){
         });
 
         dragableContainer.addEventListener('touchmove', function(e){
-                var touchobj = e.changedTouches[0] // reference first touch point for this event
-                var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
-                // move box according to starting pos plus dist
-                // with lower limit 0 and upper limit 380 so it doesn't move outside track:
-                moveAt({
-                    pageX: dist
-                })
-               // element.style.left = ( (element.offsetLeft + dragableContainer.offsetWidth > dragableContainer.offsetWidth)? dragableContainer.offsetWidth : (element.offsetLeft + dist < 0)? 0 : element.offsetLeft + dist ) + 'px'
-                e.preventDefault()
-            }, false)
+            var touchobj = e.changedTouches[0] // reference first touch point for this event
+            var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
+            // move box according to starting pos plus dist
+            // with lower limit 0 and upper limit 380 so it doesn't move outside track:
+            moveAt({
+                pageX: dist
+            })
+            // element.style.left = ( (element.offsetLeft + dragableContainer.offsetWidth > dragableContainer.offsetWidth)? dragableContainer.offsetWidth : (element.offsetLeft + dist < 0)? 0 : element.offsetLeft + dist ) + 'px'
+            e.preventDefault()
+        }, false)
 
         element.addEventListener('touchend',function(){
-           // dragableContainer.addEventListener('touchmove',false);
-           // element.addEventListener('touchstart',false);
+            // dragableContainer.addEventListener('touchmove',false);
+            // element.addEventListener('touchstart',false);
         })
 
         element.onmousedown = function(e){
@@ -463,7 +469,8 @@ var dragableModule = (function(){
 
 var drag = new dragableModule.DragableElement({
     id:"drag",
-    coverSelector:".cover_block_slider"
+    coverSelector:".cover_block_slider",
+    startPosition: "50%"
 });
 
 

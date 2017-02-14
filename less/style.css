@@ -5693,16 +5693,10 @@ textarea:-ms-input-placeholder {
     }
   }
 }
-=======
-  height: 10px;
-  width: 10px;
-  border: 1px solid #354149;
-  border-radius: 100%;
-}
 .slider__link_active {
   border: none;
   height: 16px;
   width: 16px;
   background: #f7941e;
 }
->>>>>>> origin/master
+
