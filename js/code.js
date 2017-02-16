@@ -347,10 +347,61 @@ if (document.querySelectorAll(".ideal_header").length >0) {
     window.onload = function () {
         var elem1 = new AnimatedElem('.ideal-absolute-image-devices', '.bounce');
         //console.log(scroll+' '+elem1.offTop);
-        if (elem1.offTop == scroll) {
-            elem1.animate();
+        var parentElement = document.querySelector(".modulo_second_block");
+        //Get parent elem top offset
+        var parentOffset = parentElement.offsetTop + 300;
+        if (scrolled > parentOffset) {
+            console.log(scrolled);
+            subElem.animate(0, function () {
+                subElemSecond.animate(0, function () {
+                    subElemThird.animate();
+                });
+            });
         }
 
+    }
+}
+if (document.querySelectorAll('.modulo_header').length> 0){
+    var elem1 = new AnimatedElem('.modulo_absolute_device_header', 'slideInLeft');
+    var map1 = new AnimatedElem('.modulo_absolute_second_block img.bottom', 'slideInLeft');
+    var map2 = new AnimatedElem('.modulo_absolute_second_block img.top', 'slideInLeft');
+    var img1 = new AnimatedElem(".modulo_forth_block .modulo_left_image", "zoomInDown");
+    var img2 = new AnimatedElem(".modulo_forth_block .modulo_right_image", "zoomInDown");
+    var img3 = new AnimatedElem(".modulo_forth_block .modulo_middle_image","slideInUp");
+    var book = new AnimatedElem(".modulo_book_container","zoomInDown");
+
+    elem1.animate();
+    //var elem2 = new AnimatedElem('.modulo_second_block')
+    window.onscroll = function () {
+
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        book.animate(scrolled);
+        var parentElement = document.querySelector(".modulo_second_block");
+        //Get parent elem top offset
+        var parentOffset = parentElement.offsetTop-200;
+        if(scrolled> parentOffset){
+            console.log(scrolled);
+            map2.animate(0, function () {
+                map1.animate();
+            });
+        }
+
+        var parent_second = document.querySelector(".modulo_forth_block");
+        var parentOffset2 = parent_second.offsetTop;
+
+        if(scrolled> parentOffset2){
+            img1.animate();
+            img2.animate(0,function(){
+                img3.animate();
+            });
+        }
+
+        var parent_third = document.querySelector(".modulo_fives_block");
+        var parentOffset3 = parent_third.offsetTop + 400;
+
+        if(scrolled> parentOffset3){
+            book.animate();
+        }
     }
 }
 
