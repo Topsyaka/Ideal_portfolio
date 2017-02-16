@@ -6483,14 +6483,16 @@ div[class*="modulo"] {
   margin: 0;
 }
 .modulo_third_block {
-  padding-top: 140px;
+  padding-top: 60px;
   height: 740px;
   width: 100%;
   background: #f7f7f7;
 }
 .modulo_third_block .left_part_text {
+  box-sizing: border-box;
   width: 50%;
   height: 100%;
+  padding-top: 180px;
   float: left;
 }
 .modulo_third_block .left_part_text .modulo_block_header {
@@ -6533,7 +6535,7 @@ div[class*="modulo"] {
 }
 .modulo_third_block .modulo_slider:after {
   content: '';
-  background: url("../images/portfolio-img/Ideal/ideal-iphone-gold.png");
+  background: url("../images/portfolio-img/Ideal/ideal-iphone-gold.png"), linear-gradient(0deg, #f7f7f7, #f7f7f7);
   width: 310px;
   height: 630px;
   display: block;
@@ -6545,6 +6547,60 @@ div[class*="modulo"] {
   top: 0px;
   left: 0px;
   z-index: 999;
+}
+.modulo_forth_block {
+  background: #847368;
+  width: 100%;
+  height: 870px;
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.modulo_forth_block .modulo_container {
+  position: relative;
+  text-align: center;
+}
+.modulo_forth_block .modulo_container h2 {
+  font-size: 36px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.modulo_forth_block .modulo_container p {
+  width: 650px;
+  margin: auto;
+  font-size: 16px;
+  color: #fff;
+}
+.modulo_forth_block .modulo_middle_image {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 750px;
+  height: 620px;
+  z-index: 2;
+}
+.modulo_forth_block .modulo_right_image {
+  position: absolute;
+  bottom: -195px;
+  right: 95px;
+  margin: auto;
+  width: 730px;
+  height: 620px;
+  z-index: 1;
+}
+.modulo_forth_block .modulo_left_image {
+  position: absolute;
+  bottom: -195px;
+  left: 95px;
+  margin: auto;
+  width: 730px;
+  height: 620px;
+  z-index: 1;
 }
 /* ================ */
 /*mobile*/
