@@ -6368,6 +6368,12 @@ div[class*="modulo"] {
   font-weight: 600;
   text-transform: uppercase;
 }
+@media screen and (max-width: 771px) {
+  .modulo_header h1.modulo_header_text {
+    text-align: center;
+    text-shadow: none;
+  }
+}
 .modulo_header h3 {
   color: #fff;
   font-size: 16px;
@@ -6377,6 +6383,13 @@ div[class*="modulo"] {
   max-width: 400px;
   float: right;
   text-align: right;
+}
+@media screen and (max-width: 771px) {
+  .modulo_header h3 {
+    text-align: center;
+    margin: 50px auto;
+    float: none;
+  }
 }
 .modulo_header .modulo_absolute_device_header {
   position: absolute;
@@ -6432,17 +6445,37 @@ div[class*="modulo"] {
   top: 1120px;
   left: 415px;
 }
+@media screen and (max-width: 1440px) {
+  .modulo_absolute_second_block {
+    left: 130px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .modulo_absolute_second_block {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modulo_absolute_second_block {
+    left: -90px;
+    top: 1170px;
+  }
+}
+.modulo_absolute_second_block img {
+  width: 860px;
+}
+@media screen and (max-width: 1024px) {
+  .modulo_absolute_second_block img {
+    width: 600px;
+  }
+}
 .modulo_absolute_second_block img:first-child {
   position: absolute;
   top: 165px;
-  width: 860px;
-  height: 546px;
 }
 .modulo_absolute_second_block img:last-child {
   position: absolute;
   top: 39px;
-  width: 860px;
-  height: 546px;
 }
 .modulo_second_block {
   height: 630px;
@@ -6491,6 +6524,11 @@ div[class*="modulo"] {
   border-left: solid 1px #9eaeaf;
   right: 290px;
   z-index: 12;
+}
+@media screen and (max-width: 768px) {
+  .modulo_second_block .absolute_arrow {
+    display: none;
+  }
 }
 .modulo_third_block {
   padding-top: 60px;

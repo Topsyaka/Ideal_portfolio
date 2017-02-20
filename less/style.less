@@ -6553,6 +6553,11 @@ div[class*= "modulo"]{
         color: #fff;
         font-weight: 600;
         text-transform: uppercase;
+        @media screen and (max-width: 771px){
+            text-align: center;
+            text-shadow: none;
+
+        }
     }
     h3{
         color: #fff;
@@ -6563,6 +6568,11 @@ div[class*= "modulo"]{
         max-width: 400px;
         float: right;
         text-align: right;
+        @media screen and (max-width: 771px){
+            text-align: center;
+            margin:50px auto;
+            float: none;
+        }
     }
     .modulo_absolute_device_header{
         position: absolute;
@@ -6618,18 +6628,36 @@ div[class*= "modulo"]{
     /* height: 760px; */
     top: 1120px;
     left: 415px;
+    @media screen and (max-width: 1440px){
+        left: 130px;
+    }
+    @media screen and (max-width: 1200px){
+        left: 50px;
+    }
+    @media screen and (max-width: 768px){
+        
+        left: -90px;
+        top: 1170px;
+    }
+    img{
+        width: 860px;
+        @media screen and (max-width: 1024px){
+            width: 600px;
+        }
+    }
     img:first-child{
         position: absolute;
         top: 165px;
-        width: 860px;
-        height: 546px;
+       // width: 860px;
+       // height: 546px;
     }
     img:last-child{
         position: absolute;
         top: 39px;
-        width: 860px;
-        height: 546px;
+      //  width: 860px;
+        //height: 546px;
     }
+
 
 }
 
@@ -6680,6 +6708,9 @@ div[class*= "modulo"]{
         border-left: solid 1px #9eaeaf;
         right: 290px;
         z-index: 12;
+        @media screen and (max-width:768px){
+            display: none;
+        }
 
     }
 

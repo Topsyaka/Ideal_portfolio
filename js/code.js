@@ -370,6 +370,12 @@ if (document.querySelectorAll('.modulo_header').length> 0){
     var img3 = new AnimatedElem(".modulo_forth_block .modulo_middle_image","slideInUp");
     var book = new AnimatedElem(".modulo_book_container","zoomInDown");
 
+
+    var top_pict1 = new AnimatedElem(".modulo_right_container img.first","slideInUp");
+    var top_pict2 = new AnimatedElem(".modulo_right_container img.second","slideInLeft");
+    var top_pict3 = new AnimatedElem(".modulo_right_container img.third","slideInLeft");
+    var top_pict4 = new AnimatedElem(".modulo_right_container img.fourth","slideInLeft");
+    var top_pict5 = new AnimatedElem(".modulo_right_container img.fives","zoomInDown");
     elem1.animate();
     //var elem2 = new AnimatedElem('.modulo_second_block')
     window.onscroll = function () {
@@ -380,7 +386,7 @@ if (document.querySelectorAll('.modulo_header').length> 0){
         //Get parent elem top offset
         var parentOffset = parentElement.offsetTop-200;
         if(scrolled> parentOffset){
-            console.log(scrolled);
+           // console.log(scrolled);
             map2.animate(0, function () {
                 map1.animate();
             });
@@ -400,7 +406,21 @@ if (document.querySelectorAll('.modulo_header').length> 0){
         var parentOffset3 = parent_third.offsetTop + 400;
 
         if(scrolled> parentOffset3){
-            book.animate();
+            book.animate(0);
+        }
+
+        var parent_last = document.querySelector(".modulo_six_block");
+        var parentOffset3 = parent_last.offsetTop;
+
+        if(scrolled > parentOffset3){
+            top_pict1.animate(0,function () {
+                top_pict2.animate(0);
+                top_pict3.animate(0,function () {
+                    top_pict4.animate(0,function () {
+                        top_pict5.animate(0)
+                    })
+                })
+            })
         }
     }
 }
